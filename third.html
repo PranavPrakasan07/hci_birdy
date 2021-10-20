@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -24,27 +25,55 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ruthie&display=swap" rel="stylesheet">
 
-     <header>
-         <nav class="nav">
-             <!--   <div class="toggle_link">
-               <i class="fas fa-sliders-h"></i>
-             </div>   -->
-             <ul class="nav__list">
-                 <li class="nav__list-item"><a href="" class="nav__link">Home</a></li>
-                 <li class="nav__list-item"><a href="" class="nav__link">Facts</a></li>
-                 <li class="nav__list-item"><a href="" class="nav__link">What's new!</a></li>
-             </ul>
-         </nav>
+    <div class="topnav" id="myTopnav">
+      <a id="nav" href="third.html" style="font-family: 'Ruthie', cursive; font-size: 24px;">B</a>
+      <a id="nav" href="third.html">Home</a>
+      <a id="nav" href="third.html">Facts</a>
+      <a id="nav" href="third.html">What's New!</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFlexFunction()">
+          <div class="container" onclick="menuFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
 
-      <p class="fact">Facts</p><br><br>
+      </a>
+  </div>
 
-      <img class="branch" src="left_branches.png">
+      
+  <div class="flex container">
+      <div class="flex-item-left">
+        <p class="fact">Facts</p><br><br>
+      </div>
 
-      <p class="ft">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing elit tellus vel nisl tellus aliquet sit. Non hac nisl mauris sit ornare lacus, egestas. Ac sed semper cursus porttitor eget faucibus suspendisse. Duis sapien volutpat suscipit non viverra curabitur suspendisse. Adipiscing elit tellus vel nisl tellus aliquet sit.
-      </p>
+      <div class="flex-item-left">
+
+        <img class="branch" src="left_branches.png">
+
+        <p class="ft">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing elit tellus vel nisl tellus aliquet sit. Non hac nisl mauris sit ornare lacus, egestas. Ac sed semper cursus porttitor eget faucibus suspendisse. Duis sapien volutpat suscipit non viverra curabitur suspendisse. Adipiscing elit tellus vel nisl tellus aliquet sit.
+        </p>
+      </div>
+  </div>
+
+      <script>
+        function navFlexFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function menuFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+    </script>
 
       <footer>
         <img class="rectbl" src="rect_bl.png">

@@ -60,17 +60,8 @@
  /* .camtxt {
     position:block;
     color:black;
-  } */
-
-  .camera {
-    width: 40px;  
-    position: absolute;
-    left: 50.17%;
-    right: 4.17%;
-    top: 92.5%;
-    bottom: 12.5%;
-  }
-
+  }*/
+  
   .identify {
     /* Group 4 */
     position: absolute;
@@ -84,6 +75,26 @@
     line-height: 42px;
     box-sizing: border-box;
     padding:0 31px;
+  } 
+
+  .camera {
+    width: 40px;  
+    position: absolute;
+    left: 50.17%;
+    right: 4.17%;
+    top: 92.5%;
+    bottom: 12.5%;
+  }
+
+  .uplabel {
+    margin-left:100px;
+    margin-top: px;
+    transform: translateY(-100%);
+  }
+  
+  .upsubmit {
+    margin-left:100px;
+    margin-top:;
   }
 
   .rectbl {
@@ -195,18 +206,4 @@
     position: absolute;
     left: 317px;
     top: 1509px;
-<<<<<<< HEAD
   }
-.uplabel {
-  margin-left:100px;
-  margin-top: 3px;
-  transform: translateY(-100%);
-}
-
-.upsubmit {
-  margin-left:100px;
-  top: 30px;
-}
-=======
-  }
->>>>>>> 62d3b28e421153c3b9255a7aceae7df066779605
